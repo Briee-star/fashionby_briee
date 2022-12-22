@@ -16,22 +16,22 @@
   <div class="carousel-item active">
     <img src="uploads/babygirl.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
-      <h5>First slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
+      <h5>GIRL CLOTHING</h5>
+      <p>We have the most comfortable and affordable baby girl clothing available</p>
     </div>
   </div>
   <div class="carousel-item">
     <img src="uploads/babyboy.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
-      <h5>Second slide label</h5>
-      <p>Some representative placeholder content for the second slide.</p>
+      <h5>BOY CLOTHING</h5>
+      <p>We have the most comfortable and affordable baby boy clothing available</p>
     </div>
   </div>
   <div class="carousel-item">
     <img src="uploads/onesies.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
-      <h5>Third slide label</h5>
-      <p>Some representative placeholder content for the third slide.</p>
+      <h5>ONSIES</h5>
+      <p>We have the most comfortable and affordable onsies available</p>
     </div>
   </div>
 </div>
@@ -43,4 +43,18 @@
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Next</span>
 </button>
+</div>
+<style>
+   .carousel-item 
+   {
+  height: 800px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+} 
+</style>
 </div>

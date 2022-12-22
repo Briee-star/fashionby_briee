@@ -46,7 +46,7 @@
 <style>
    .carousel-item 
    {
-  height: 500px;
+  height: 800px;
 }
 
 .item img {
