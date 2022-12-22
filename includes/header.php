@@ -39,22 +39,19 @@ include_once 'includes/session.php'
         <p>&nbsp;|&nbsp;</p>
         </li>
         <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">Women's Clothing</a>
+        <a class="nav-link active text-white" aria-current="View Attendees" href="womenclothing.php">Women's Clothing</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">Men's Clothing</a>
+        <a class="nav-link active text-white" aria-current="View Attendees" href="mensclothing.php">Men's Clothing</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">Baby's Clothing</a>
+        <a class="nav-link active text-white" aria-current="View Attendees" href="babysclothing.php">Baby's Clothing</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">Accessories</a>
+        <a class="nav-link active text-white" aria-current="View Attendees" href="accessories.php">Accessories</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">About Us</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active text-white" aria-current="View Attendees" href="index.php">About Us</a>
+        <a class="nav-link active text-white" aria-current="View Attendees" href="aboutus.php">About Us</a>
         </li>
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">

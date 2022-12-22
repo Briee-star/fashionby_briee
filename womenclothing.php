@@ -31,7 +31,7 @@
     <img src="uploads/bathingsuit.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5></h5>
-      <p>Some representative placeholder content for the third slide.</p>
+      <p>e have the most comfortable and affordable bathing suit available.</p>
     </div>
   </div>
 </div>
