@@ -53,16 +53,30 @@ include_once 'includes/session.php'
         <li class="nav-item">
         <a class="nav-link active text-white" aria-current="View Attendees" href="viewrecords.php">About Us</a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="View Attendees" href="index.php">About Us</a>
+        </li>
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <?php 
             if(!isset($_SESSION['userid'])){
          ?>
             <a class="nav-link active text-white" aria-current="Login" href="login.php">Login</a>
-            <a class="nav-link active text-white" aria-current="Sign Up" href="signup.php">Sign Up</a>
+            
           <?php } else { ?>
-            <a class="nav-link active text-white" aria-current="Logout" href="logout.php">Logout</a>
-            <a class="nav-link active text-white" aria-current="Sign Up" href="signup.php">Sign Up</a>
+            <a class="nav-link" href="#"><span>Welcome
+                                        <?php echo $_SESSION['username'] ?>!</span></a>
+                            
+                            <li class="nav-item ">
+                                <a class="nav-link js-scroll-trigger" href="viewrecords.php">View Members</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link js-scroll-trigger" href="logout.php">Logout</a>
+                            </li>
+
+
+
+           
             <?php } ?>
       
         </li>

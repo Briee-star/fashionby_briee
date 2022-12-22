@@ -2,10 +2,10 @@
         $title ='View Records';
 
         require_once 'includes/header.php'; 
-       // require_once 'includes/auth_check.php'; 
         require_once 'db/conn.php';
+        require_once 'includes/auth_check.php';
 
-        $result = $crud->getMembers();
+        $result = $crud->getSubscribers();
     ?>
 
 

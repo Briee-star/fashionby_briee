@@ -2,6 +2,7 @@
 
 require_once 'db/conn.php';
 require_once 'db/crud.php';
+require_once 'includes/auth_check.php';
 
 
 //Get values from post operation

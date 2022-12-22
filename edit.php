@@ -6,6 +6,7 @@
       //  require_once 'includes/auth_check.php'; 
         require_once 'db/conn.php';
         require_once 'db/crud.php';
+        require_once 'includes/auth_check.php';
 
 
       
@@ -23,7 +24,7 @@
  <h1 class="text-center">Edit Record</h1>
 
 <form method="post" action="editpost.php">
-          <input type="hidden" name='id' value="<?php echo $subscriber['attendee_id'] ?>" />  
+          <input type="hidden" name='id' value="<?php echo $subscriber['subscriber_id'] ?>"> 
   <div class="form-group">
         <label for="firstname">First Name</label>
         <input type="text" class="form-control" value="<?php echo $subscriber['firstname'] ?>" 
@@ -40,7 +41,7 @@
   <div class="form-group">
         <label for="dob">Email</label>
         <input type="text" class="form-control" value="<?php echo $subscriber['emailaddress'] ?>" 
-        id="dob" name="email">
+        id="dob" name="email" readonly>
         <br>
   </div>
   <div class="form-group">

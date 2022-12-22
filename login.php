@@ -2,7 +2,13 @@
         $title ='User Login';
 
         require_once 'includes/header.php'; 
+        require_once 'includes/session.php';
+
         require_once 'db/conn.php';   
+        require_once 'db/crud.php';   
+        
+
+
 
         //if data was submitted via a form POST request, then...
         if($_SERVER ['REQUEST_METHOD'] == 'POST'){
@@ -10,7 +16,7 @@
             $password = $_POST['password'];
             $new_password = md5($password.$username);
 
-            $result = $user->getUser($username,$new_password);
+            $result = $crud->getUserDetails($username,$new_password);
             if(!$result){
                 echo '<div class="alert alert-danger">Username or Password is incorrect! Please try again. </div>';
             }else{

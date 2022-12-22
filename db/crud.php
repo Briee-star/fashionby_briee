@@ -63,7 +63,7 @@
         }
     }
 
-    public function getMembers(){
+    public function getSubscribers(){
         try{
         $sql = "SELECT * FROM `subscribers` "; 
         $result = $this->db->query($sql);
@@ -77,7 +77,7 @@
 
     public function getSubscriberDetails($id){
         try{
-        $sql = "select * from subscribers ";
+        $sql = "select * from subscribers where subscriber_id = :id";
         $stmt = $this->db->prepare($sql);
         $stmt->bindparam(':id', $id);
         $stmt->execute();
@@ -102,7 +102,22 @@
         return false; 
         }
     }
+    public function getUserDetails($username,$password){
+        try{
+            $sql = "select * from users where username = :username AND password = :password";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(':username', $username);
+            $stmt->bindparam(':password', $password);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result;
+        }catch (PDOException $e) {
+            echo $e->getMessage();
+            return false; 
+        }
+    }
 
+    
     
         
 

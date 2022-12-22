@@ -1,4 +1,4 @@
- <?php 
+<?php 
 require'vendor/autoload.php';
 
 class SendEmail{
@@ -13,7 +13,7 @@ class SendEmail{
         $email-> addContent("text/plain",$content);
         //$email-> addCContent("text/html",$content);
 
-        $sendgrid = new\SendGrid($key);
+        $sendgrid = new \SendGrid($key);
 
         try{
             $response = $sendgrid->send($email);
